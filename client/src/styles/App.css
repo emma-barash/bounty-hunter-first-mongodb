@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: black;
+    background-image: linear-gradient(black, white);
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+}
+
+p{
+    padding: 2px;
+    margin: 0;
+    color: rgb(24, 34, 34);
+    font-weight: bold;
+    color: white;
+}
+input{
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+    background-color: rgb(28, 43, 43);
+    color: white;
+    border-radius: 20px 5px;
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+    width: 5vw;
+    font-family: 'Marcellus SC', serif;
+}
+button:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    font-family: 'Marcellus SC', serif;
+    border: white solid 1px;
+    width: 40%;
+    margin: auto;
+    background-color: rgb(23, 32, 32); 
+    padding: 10px;
+    text-align: center;
+    border-radius: 60px 5px;
+    box-shadow: white 5px 5px 10px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+.landButton{
+    font-family: 'Marcellus SC', serif;
+    height: 5vh;
+    margin: 50px;
+    width: 15vw;
+    background-color: rgb(23, 32, 32); 
+    color: white;
+    border-radius: 30px 5px;
+    transform: color 0.2s linear;
+    font-size: 20px;
+    font-weight: bolder;;
+    box-shadow: white 5px 5px 10px;
+}
+
+.landButton:hover{
+    border: 3px solid greenyellow;
+    color: greenyellow;
+    cursor: pointer;
+    box-shadow: greenyellow 5px 5px 10px;
+}
+.landContainer{
+    height: 130vh;
+    width: 100vw;
+}
+
+.landContent{
+    display: flex;
+    justify-content: center;
+}
+
+.contentContainer{
+    height: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    margin: 60px auto;
+    grid-gap: 20px;
+}
+
+.gridItem{
+    background-color: #8BC34A;
+    border-radius: 75px 20px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: rgb(63, 92, 45) 10px 10px 10px;
+    font-weight: lighter;
+    color: rgb(28, 43, 43);
+}
+
+.inputs{
+    width: 300px;
+    height: 250px;
+    margin: 10px auto;
+    padding: 0;
+    box-shadow: rgb(48, 87, 33) 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(23, 32, 32);
+}
+
+.enterBounty{
+    background-color: #8BC34A;
+    color: black;
+    transform: border 0.2s linear;
+    width: 10vw;
+}
+.enterBounty:hover{
+    background-color: #8BC34A;
+    border: 2px solid rgb(28, 43, 43);
+    cursor: pointer;
+}
+
+.form-hide{
+    display: none;
+}
+
+.form-show{
+    display: block;
+}

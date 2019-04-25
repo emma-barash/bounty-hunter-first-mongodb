@@ -1,12 +1,17 @@
 import React from 'react';
-import DisplayBounty from './DisplayBounty'
+import { Switch, Route } from 'react-router-dom';
+import DisplayBounty from './components/DisplayBounty';
+import { withForm } from './context/FormProvider'
+import './styles/App.css'
 
 const App = () => {
     return (
         <div>
-            <DisplayBounty />
+            <Switch>
+                <Route exact path="/" render={(rProps) => <DisplayBounty {...rProps} />}/>
+            </Switch>
         </div>
     );
 };
 
-export default App;
+export default withForm(App);
