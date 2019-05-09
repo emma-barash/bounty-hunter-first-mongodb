@@ -52,9 +52,7 @@ class BountyProvider extends Component {
 
   updateBounty = data => {
     axios.put(`/bounty/${data._id}`, data)
-    .then(res => {
         this.getBounty()
-    })
   };
 
   render() {
@@ -63,10 +61,9 @@ class BountyProvider extends Component {
         const bounty = this.state.characters.find(bounty => {
           return bounty._id === this.state.bountyUpdate;
         });
-        // console.log(bounty);
         return bounty;
       }
-      return {message: "whatever"};
+      return {message: "no", _id: ""};
     };
 
     const props = {

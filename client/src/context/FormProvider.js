@@ -8,10 +8,13 @@ class FormProvider extends Component {
             theme: 'hide'
         }
     }
-    showForm = () => {
+    showForm = (id) => {
+        if(id){
+            return this.setState({theme: 'show'})
+        }
         this.setState(ps => {
           return {
-              theme: ps.theme === 'hide' ? 'show' : 'hide'
+              theme: ps.theme === 'show' ? 'hide' : 'show'
           } 
         })
     }

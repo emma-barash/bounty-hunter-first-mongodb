@@ -12,7 +12,7 @@ const {getBounty, characters } = props
         <h1>Bounty Hunter</h1>
         <div className="landContent">
             <button onClick={getBounty} className="landButton">Get Bounty List</button>
-            <button className="landButton" onClick={props.showForm}>{props.theme === 'hide' ? 'Add Bounty' : 'Hide Form'}</button>
+            <button className="landButton" onClick={() => props.showForm()}>{props.theme === 'hide' ? 'Add Bounty' : 'Hide Form'}</button>
          </div>
          <AddBounty />
         <div className="contentContainer">

@@ -35,6 +35,9 @@ button:hover{
     border: 2px solid white;
     cursor: pointer;
 }
+button:focus{
+    outline: none;
+}
 
 h1{
     color: white;
@@ -85,7 +88,7 @@ input{
 
 .contentContainer{
     height: auto;
-    width: 80vw;
+    width: 85vw;
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: center;

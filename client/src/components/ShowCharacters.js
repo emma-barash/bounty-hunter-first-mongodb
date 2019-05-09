@@ -11,7 +11,7 @@ const ShowCharacters = (props) => {
             <h3>Type: {props.type}</h3>
             <button onClick={() => props.deleteBounty(props._id)}>Delete</button>
             <button onClick={() => {
-                props.showForm()
+                props.showForm(props._id)
                 props.updateBountyToggle(props._id)
                 }}>Update</button>
         </div>

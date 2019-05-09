@@ -6,7 +6,7 @@ class AddBounty extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      firstName: props.updateData.firstName || "",
+      firstName: "",
       lastName: "",
       living: "",
       bountyAmount: "",
@@ -63,9 +63,8 @@ class AddBounty extends Component {
     this.props.updateBountyToggle()
   }
 
-  componentDidUpdate(){
-
-    if (this.props.updateData._id && this.state.firstName === ""){
+  componentDidUpdate(prevProps){
+    if (prevProps.updateData._id !== this.props.updateData._id && this.state.firstName === ""){
       this.stateForUpdate(this.props.updateData)
     }
   }
