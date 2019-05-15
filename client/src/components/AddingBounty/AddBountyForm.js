@@ -3,7 +3,6 @@ import { withForm } from '../../context/FormProvider'
 import { withBounty } from '../../context/BountyProvider'
 
 const AddBountyForm = props => {
-  console.log(props)
     return (
         <div className={`form-${props.theme}`}>
             <div className="inputs">

@@ -23,8 +23,8 @@ class BountyProvider extends Component {
 
   postBounty = data => {
     axios.post("/bounty", data).then(res => {
-        this.getBounty()
       console.log(res.status);
+      this.getBounty()
     });
   };
   deleteBounty = data => {
