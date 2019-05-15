@@ -158,7 +158,7 @@ input{
     button{
         width: 45%;
     }
-    html, body{
+    .landContainer{
         height: auto;
     }
 }
