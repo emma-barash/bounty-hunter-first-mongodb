@@ -12,7 +12,7 @@ const BountySchema = new Schema (
             required: true
         },
         living: {
-            type: Boolean,
+            type: String,
             required: true
         },
         bountyAmount: {

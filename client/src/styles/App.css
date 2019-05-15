@@ -158,4 +158,7 @@ input{
     button{
         width: 45%;
     }
+    html, body{
+        height: auto;
+    }
 }
