@@ -150,7 +150,12 @@ input{
         grid-template-columns: 50%;
         grid-template-rows: 25%;
     }
+    .gridItem{
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        padding: 5px;
+    }
     button{
-        width: 15%;
+        width: 45%;
     }
 }
