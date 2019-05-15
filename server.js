@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const PORT = process.env.MONGODB_URI || 5000
+const PORT = process.env.PORT || 5000
 // other imports
 const path = require('path');
 
@@ -14,7 +14,7 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'client', 'build')))
 
 // MONGO DB CONNECT
-mongoose.connect('mongodb://localhost:27017/bounty-characters', { useNewUrlParser: true }, () => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/bounty-characters', { useNewUrlParser: true }, () => {
     console.log('Connected to the DB')
 })
 
