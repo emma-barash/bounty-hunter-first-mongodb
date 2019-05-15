@@ -136,3 +136,21 @@ input{
 .form-show{
     display: block;
 }
+
+@media only screen and (max-width: 812px){
+    .landButton{
+        font-size: 12px;
+        height: 10vh;
+        width: 15vw;
+    }
+    .enterBounty{
+        width: 15vw;
+    }
+    .contentContainer{
+        grid-template-columns: 50%;
+        grid-template-rows: 25%;
+    }
+    button{
+        width: 15%;
+    }
+}
