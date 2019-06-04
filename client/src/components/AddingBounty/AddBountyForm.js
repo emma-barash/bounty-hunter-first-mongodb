@@ -42,6 +42,9 @@ const AddBountyForm = props => {
           />
           <br />
           <button className="enterBounty">{props.bountyUpdate ? 'Update' : 'Enter'} Bounty</button>
+          {
+            props.bountyUpdate && <button className="enterBounty">Cancel</button>
+          }
         </form>
       </div>
         </div>

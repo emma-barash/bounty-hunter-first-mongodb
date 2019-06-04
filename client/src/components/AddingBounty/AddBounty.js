@@ -73,7 +73,7 @@ class AddBounty extends Component {
     
     return (
       <div>
-          <AddBountyForm  onSubmit={this.handleSubmit} onChange={this.handleChange} {...this.state}/>
+          <AddBountyForm  onSubmit={this.handleSubmit} onChange={this.handleChange} {...this.state} />
       </div>
     );
   }

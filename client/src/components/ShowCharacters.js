@@ -5,7 +5,8 @@ import {withForm} from '../context/FormProvider'
 const ShowCharacters = (props) => {
     return (
         <div className="gridItem">
-            <h2>{props.firstName} {props.lastName}</h2>
+            <h2>{props.firstName}</h2>
+            <h2>{props.lastName}</h2>
             <h3>Alive: {props.living.toString()}</h3>
             <h3>Bounty: ${props.bountyAmount}</h3>
             <h3>Type: {props.type}</h3>
